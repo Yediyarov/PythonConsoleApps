@@ -27,7 +27,6 @@ for i in itertools.count():
     attemp_count=0
     my_number_generator=(randint(1,100) for i in range(5))
     guess_number=next(my_number_generator)
-    print(guess_number)
     for j in range(5):
         answers = inquirer.prompt(questions)
         user_num=int(answers['number'])
